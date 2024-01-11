@@ -1,16 +1,12 @@
 import './App.css'
+import TriviaCard from './components/TriviaCard'
+import Header from './components/Header'
 
 function App() {
-  return (
-    <>
-    <div className="top">
-      <h3 className="name">Trivia Game</h3>
-    </div>
-    <div className="div">
-      <h2 className="title">Place question here and then I'm adding more text to see how the box fills up</h2>
-    </div>
-    </>
-  )
+  return <>
+  <Header />
+  <TriviaCard />
+  </>;
 }
 
-export default App
+export default App;

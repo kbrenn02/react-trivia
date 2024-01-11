@@ -5,27 +5,3 @@
   text-align: center;
 }
 
-.div {
-  text-align: center; 
-  background-color: green;
-  padding: 2em;
-  width: 350px;
-  height: 400px;
-}
-
-.title {
-  color: red;
-  font-size: 2em;
-}
-
-.top {
-  background-color: yellow; 
-  padding: .1em;
-}
-
-.name {
-  color: red;
-  font-size: 1.5em;
-}
-
-
