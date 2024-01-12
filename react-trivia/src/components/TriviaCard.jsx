@@ -52,11 +52,6 @@ function TriviaCard({index}) {
     const [isQuestion, setIsQuestion] = useState(true);
 
     function toggle() {
-        // if (isQuestion) {
-        //     console.log("this should be questions");
-        // } else {
-        //     console.log("this should be answer");
-        // }
         setIsQuestion(!isQuestion);
     }
     
@@ -66,7 +61,7 @@ function TriviaCard({index}) {
             <div className="div">
                 <h2 className="title" onClick={() => toggle()}>
                     {isQuestion ? questions[index] : answers[index]}
-                    </h2>
+                </h2>
             </div>
         </>
     );

@@ -11,8 +11,9 @@
 
 .flex-child {
     flex: 1;
+    margin: 40px;
 }
 
-.flex-child:first-child {
+/* .flex-child:first-child {
     margin: auto;
-}
+} */
