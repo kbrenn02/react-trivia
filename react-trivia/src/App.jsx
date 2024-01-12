@@ -2,7 +2,6 @@ import { useState } from 'react';
 import './App.css'
 import TriviaCard from './components/TriviaCard'
 import Score from './components/Score';
-import Navigation from './components/Navigation';
 
 function App() {
   
