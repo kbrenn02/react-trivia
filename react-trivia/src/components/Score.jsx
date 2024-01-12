@@ -8,11 +8,20 @@ function Score() {
 
     return (
         <>
-            <h3>Total Score: {score}</h3>
-            <button onClick={()=>{ setScore(score + 1)}}>I got it right!</button>
-            <button onClick={()=>{ setScore(score)}}>I missed it :(</button>
-            <button onClick={()=>{ }}>Next Question</button>
-            <button onClick={()=>{ }}>Previous Question</button>
+            <div className="score">
+                <h3>Total Score: {score}</h3>
+            </div>
+
+            <div>
+                <button className="wrong" onClick={()=>{ setScore(score)}}>I missed it :(</button>
+                <button className="right" onClick={()=>{ setScore(score + 1)}}>I got it right!</button>
+            </div>
+            
+            <div>
+                <button className="previous" onClick={()=>{ }}>Previous Question</button>
+                <button className="next" onClick={()=>{ }}>Next Question</button>
+            </div>
+            
         </>
     )
 

@@ -4,16 +4,23 @@ import Score from './components/Score';
 
 function App() {
   
-    const currentTime = new Date().toDateString();
+    // const currentTime = new Date().toDateString();
 
-    function handleClick(){
-        console.log(currentTime);
-    }
+    // function handleClick(){
+    //     console.log(currentTime);
+    // }
 
     return (
         <>  
-            <TriviaCard />
-            <Score />
+            <div className = "flex-container">
+                <div className = "flex-child">
+                    <Score />
+                </div>
+                <div className = "flex-child">
+                    <TriviaCard index={"wowza"}/>
+                </div>
+            </div>
+            
         </>
     )
 }
