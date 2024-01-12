@@ -2,8 +2,10 @@
     text-align: center; 
     background-color: green;
     padding: 2em;
-    width: 350px;
+    width: 50%; /*figure out how to make the header and the body the same width. Will probably give them the same class
+    name for information like widt and */
     height: 400px;
+    margin: auto;
     border-radius: 0px 0px 25px 25px;
   }
 

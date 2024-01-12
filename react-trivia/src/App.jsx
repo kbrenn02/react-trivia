@@ -1,6 +1,5 @@
 import './App.css'
 import TriviaCard from './components/TriviaCard'
-import Header from './components/Header'
 import Score from './components/Score';
 
 function App() {
@@ -13,7 +12,6 @@ function App() {
 
     return (
         <>  
-            <Header />
             <TriviaCard />
             <Score />
         </>

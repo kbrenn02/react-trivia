@@ -1,11 +1,12 @@
 .name {
     color: rgb(202, 34, 34);
     font-size: 1.5em;
-    font-stretch: wider;
   }
   
 .top {
     background-color: yellow; 
-    padding: .1em;
+    padding: .1em 2em .1em 2em;
     border-radius: 25px 25px 0px 0px;
+    width: 50%;
+    margin: auto;
   }
