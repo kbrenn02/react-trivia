@@ -1,9 +1,9 @@
 import './Header.css'
 
-function Header() {
+function Header({index}) {
   return (
     <div className="top">
-      <h3 className="name">Let's Play Trivia</h3>
+      <h3 className="name">Question Number {index}</h3>
     </div>
   );
 }
