@@ -1,5 +1,6 @@
 import './TriviaCard.css'
 import Header from './Header';
+import { useState } from 'react';
 
 function TriviaCard({index}) {
     
@@ -25,23 +26,47 @@ function TriviaCard({index}) {
         "How many Academy Awards did Avatar win?                                  ",
         "What is the spiritual network that connects all living things on Pandora?"
     ]
-    const answers = ["answer 1", "answer 2", "answer 3", "answer 4", "answer 5"]
+    const answers = [
+        "2009",
+        "James Cameron",
+        "Pandora",
+        "Four (4)",
+        "The Tree of Souls",
+        "Approximately 2 hours and 58 minutes",
+        "Unobtainium",
+        "Na'vi",
+        "Over $2.7 billion",
+        "Zoe Saldana",
+        "New Zealand",
+        "Around $237 million",
+        "Avengers: Endgame",
+        "His twin brother, Tom Sully",
+        "Through a neural link",
+        "Sky People",
+        "Four (4)",
+        "Hallelujah Mountains",
+        "Three (3)",
+        "Eywa",
+    ]
 
+    const [isQuestion, setIsQuestion] = useState(true);
 
-    // function toggle() {
-    //     var x = document.querySelector(['tony']);
-    //     if (x == questions[index]) {
-    //         console.log("this should be questions");
-    //     }
-    //     console.log("this should be answer");
-    //     console.log(x);
-    // }
+    function toggle() {
+        // if (isQuestion) {
+        //     console.log("this should be questions");
+        // } else {
+        //     console.log("this should be answer");
+        // }
+        setIsQuestion(!isQuestion);
+    }
     
     return (
         <>
             <Header index={index+1}/>
             <div className="div">
-                <h2 className="title">{questions[index]}</h2>
+                <h2 className="title" onClick={() => toggle()}>
+                    {isQuestion ? questions[index] : answers[index]}
+                    </h2>
             </div>
         </>
     );

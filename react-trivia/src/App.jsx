@@ -18,7 +18,7 @@ function App() {
                     <button className="next" onClick={()=>{ setQuestionNumber(questionNumber+1)}}>Next Question</button>
                 </div>
                 <div className = "flex-child">
-                    <TriviaCard index={questionNumber-1}/>
+                    <TriviaCard index={questionNumber-1} />
                 </div>
             </div>
             
