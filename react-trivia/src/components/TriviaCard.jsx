@@ -2,7 +2,7 @@ import './TriviaCard.css'
 import Header from './Header';
 import { useState } from 'react';
 
-function TriviaCard({index}) {
+function TriviaCard({index, isQuestion, setIsQuestion}) {
     
     const questions = [
         "What year was the movie Avatar released?                                 ",
@@ -49,7 +49,7 @@ function TriviaCard({index}) {
         "Eywa",
     ]
 
-    const [isQuestion, setIsQuestion] = useState(true);
+    // const [isQuestion, setIsQuestion] = useState(true);
 
     function toggle() {
         setIsQuestion(!isQuestion);
