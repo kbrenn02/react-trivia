@@ -1,16 +1,17 @@
 .div {
     text-align: center; 
-    background-color: green;
+    background-color: #bc6c25;
     padding: 2em;
     width: 400px;
     height: 400px;
     /* margin-left: 200px; */
     /* margin: auto; */
     border-radius: 0px 0px 25px 25px;
+    box-shadow: 5px 5px 5px gray;
   }
 
 .title {
-    color: black;
+    color: #283618;
     font-size: 2em;
   }
   

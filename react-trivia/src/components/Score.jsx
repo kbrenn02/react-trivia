@@ -6,6 +6,15 @@ function Score() {
     // let score = 0
     const [score, setScore] = useState(0)
 
+    function showSuccess() {
+        var success = "Woohoo! You got a point";
+        alert(success)
+    }
+    function showFailure() {
+        var failure = "Boo! You got it wrong";
+        alert(failure)
+    }
+
     return (
         <>
             <div className="score">
@@ -13,8 +22,17 @@ function Score() {
             </div>
 
             <div>
-                <button className="wrong" onClick={()=>{ setScore(score)}}>I missed it :(</button>
-                <button className="right" onClick={()=>{ setScore(score + 1)}}>I got it right!</button>
+                <button className="wrong" onClick={() => { 
+                    setScore(score)
+                    showFailure()
+                    }}>I missed it :(
+                </button>
+
+                <button className="right" onClick={() => { 
+                    setScore(score + 1)
+                    showSuccess()
+                    }}>I got it right!
+                </button>
             </div>
         </>
     )

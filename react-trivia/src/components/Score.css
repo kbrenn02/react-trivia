@@ -1,4 +1,29 @@
 .right, .wrong, .previous, .next {
-    margin-top: 2em;
+    /* margin-top: 2em; */
+    color: #283618;
+    border-color: #283618;
+    padding: 10px;
+    margin: 15px;
 }
 
+.right:hover {
+    background-color: #a1cf0b;
+}
+.wrong:hover {
+    background-color: #cf590b;
+}
+.previous:hover, .next:hover {
+    background-color: #0ba8cf;
+}
+
+button {
+    box-shadow: 5px 5px 5px gray;
+}
+button:active {
+    box-shadow: 5px 5px #666;
+    transform: translateY(4px);
+}
+
+.score {
+    color: #283618;
+}
