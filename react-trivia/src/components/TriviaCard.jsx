@@ -1,9 +1,11 @@
 import './TriviaCard.css'
-import Header from './Header';
-import { useState } from 'react';
+import Header from './Header'; //Header is imported here and not in App.jsx
 
+// isQuestion and setIsQuestion are defined in App.jsx to allow for the next and prev buttons to update the cards
+// Therefore, they are passed as props to the TriviaCard function
 function TriviaCard({index, isQuestion, setIsQuestion}) {
     
+    // list of questions
     const questions = [
         "What year was the movie Avatar released?                                 ",
         "Who directed the movie Avatar?                                           ",
@@ -26,6 +28,7 @@ function TriviaCard({index, isQuestion, setIsQuestion}) {
         "How many Academy Awards did Avatar win?                                  ",
         "What is the spiritual network that connects all living things on Pandora?"
     ]
+    // list of answers that align with questions
     const answers = [
         "2009",
         "James Cameron",
@@ -49,16 +52,18 @@ function TriviaCard({index, isQuestion, setIsQuestion}) {
         "Eywa",
     ]
 
-    // const [isQuestion, setIsQuestion] = useState(true);
-
+    // when the trivia card is clicked (or at least the words), it flips between the question and answer
     function toggle() {
         setIsQuestion(!isQuestion);
     }
     
     return (
         <>
+        {/* the Header is contained/linked here so it's not brought into App.jsx */}
             <Header index={index+1}/>
             <div className="div">
+                {/* the onClick allows to toggle between question and answer. Depending on the state 
+                of isQuestion, it will either show the question of the answer*/}
                 <h2 className="title" onClick={() => toggle()}>
                     {isQuestion ? questions[index] : answers[index]}
                 </h2>

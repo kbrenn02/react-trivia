@@ -2,10 +2,9 @@
     text-align: center; 
     background-color: #bc6c25;
     padding: 2em;
-    width: 400px;
+    width: 400px; /* had to set the width because if I did 75%, then the trivia card changed size depending on 
+    question length */
     height: 400px;
-    /* margin-left: 200px; */
-    /* margin: auto; */
     border-radius: 0px 0px 25px 25px;
     box-shadow: 5px 5px 5px gray;
   }

@@ -4,8 +4,9 @@
     border-color: #283618;
     padding: 10px;
     margin: 15px;
-}
+} /*make all the buttons the same padding and with the same font color*/
 
+/*when hovering over different buttons, different colors are shown*/
 .right:hover {
     background-color: #a1cf0b;
 }
@@ -19,6 +20,7 @@
 button {
     box-shadow: 5px 5px 5px gray;
 }
+/* when a button is clicked, it looks like it's being pressed */
 button:active {
     box-shadow: 5px 5px #666;
     transform: translateY(4px);

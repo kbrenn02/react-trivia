@@ -8,6 +8,5 @@
     padding: .1em 2em .1em 2em;
     border-radius: 25px 25px 0px 0px;
     width: 400px;
-    box-shadow: 5px 5px 5px gray;
-    /* margin-left: 200px; */
+    box-shadow: 5px 5px 5px gray; /* giving a shadow to both the header (noted here) and the trivia card (see Trivia.CSS)*/
   }

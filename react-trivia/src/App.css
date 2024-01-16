@@ -5,6 +5,7 @@
   text-align: center;
 }
 
+/* Have the container to store the score/buttons and the trivia cards be the same size */
 .flex-container {
     display: flex;
 }
@@ -13,7 +14,3 @@
     flex: 1;
     margin: 40px;
 }
-
-/* .flex-child:first-child {
-    margin: auto;
-} */
